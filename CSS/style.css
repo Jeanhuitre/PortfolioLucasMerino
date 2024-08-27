@@ -195,8 +195,7 @@ a:hover {
 
 .profilePicture img {
     width: 80%;
-    /*border-radius: 50%;*/
-    clip-path:ellipse(50% 33%);
+    border-radius: 50%;
 }
 
 .reseaux {
