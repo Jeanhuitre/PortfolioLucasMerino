@@ -121,7 +121,7 @@ a:hover {
 /* Background Intro */
 
 #intro {
-    background-image: url(/Images/FondPage.png);
+    background-image: url(/Images/FondPageComp.png);
     height: 100dvh;
     overflow: hidden;
 }
