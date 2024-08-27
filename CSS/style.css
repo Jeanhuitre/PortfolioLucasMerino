@@ -1,0 +1,290 @@
+/* Style des éléments secondaires */
+
+/* Container-nav */
+
+nav, .menu-nav {
+    display: flex;
+}
+
+nav {
+    justify-content: space-evenly;
+    gap: 55%;
+    align-items: center;
+    height: 17dvh;
+}
+
+.menu-nav {
+    gap: 2rem;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+    transition: all 300ms ease-in-out; /* rend plus smooth les transitions des liens de nav */
+    font-size: large;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.logo-nav img {
+    width: 90px;
+}
+
+.logo-nav:hover {
+    transition: 0.6s;
+    transform: rotate(360deg);
+}
+
+/* Hamburger menu */
+
+#hamburger-nav {
+    display: none; /* le menu n'est pas affiché en mode desktop */
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span { /* met en place les barres noires du menu */
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburgerMenu-nav { /* positionne le menu et prépare l'intérieur */
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+    display: none; /* On cache le menu par défaut */
+    overflow: hidden;
+}
+
+.hamburgerMenu-nav a {
+    display: block;
+    padding: 5px;
+    text-align: left;
+    color: white;
+    font-size: small;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburgerMenu-nav li {
+    list-style: none;
+}
+
+.hamburgerMenu-nav.open {
+    display: block; /* Affiche le menu lorsque la classe "open" est appliquée */
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px); /* fais pivoter la première ligne afi de former un X */
+}
+
+.hamburger-icon.open span:nth-child(2) { 
+    opacity: 0; /* fais disparaître la seconde ligne */
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px); /* fais pivoter la dernière ligne pour former un X */
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* Background Intro */
+
+#intro {
+    background-image: url(/Images/FondPage.png);
+    height: 100dvh;
+    overflow: hidden;
+}
+
+/* Intro */
+
+.texte-presentation {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15dvh;
+    width: 45%;
+}
+
+.texte-presentation h1 {
+    margin-bottom: 2em;
+}
+
+.texte-presentation p {
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Ajuste la taille entre 1rem et 1.5rem selon la taille de l'écran */
+    line-height: 1.5; /* Améliore la lisibilité */
+}
+
+.titre {
+    margin-bottom: 2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.emploi {
+    position: sticky;
+    bottom: auto;
+    color: white;
+    margin-left: 5dvh;
+    font-size: larger;
+}
+
+#changing-text {
+    color: #D3C8B3;
+    transition: all 800ms ease-in-out;
+}
+
+/* about */
+
+.containerAbout {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem;
+    justify-content:center;
+}
+
+.profilePicture {
+    width: 40%;
+    text-align: center;
+}
+
+.presentationDetail {
+    width: 60%;
+    line-height: 1.6; /* Améliore la lisibilité */
+}
+
+.presentationDetail h1, p {
+    margin-bottom: 1rem;
+}
+
+.presentationDetail p {
+    font-size: 15px;
+}
+
+.profilePicture img {
+    width: 80%;
+    /*border-radius: 50%;*/
+    clip-path:ellipse(50% 33%);
+}
+
+.reseaux {
+    align-items: center;
+    text-align: center;
+}
+
+/* Compétences */
+
+.carte-competences {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 5rem;
+}
+
+.container-carte {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajuste automatiquement */
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.carte {
+    width: 300px; /* ajustez la largeur selon votre besoin */
+    height: 400px; /* ajustez la hauteur selon votre besoin */
+    perspective: 1000px;
+    margin: 20px; /* ajoute de l'espace entre les cartes */
+}
+
+.inner-carte {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    padding-bottom: 5rem;
+}
+
+.carte.flipped .inner-carte {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.carte p {
+    font-family: "Libre Caslon Text", serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* logo */
+
+.fa {
+    padding: 20px;
+    font-size: 40px !important;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+.fa-linkedin {
+    font-size: 40px;
+    background: #007cb500;
+    color: hwb(0 100% 0%);
+  }
+
+  .fa-envelope {
+    font-size: 40px;
+    background: #007cb500;
+    color: hwb(0 100% 0%);
+  }

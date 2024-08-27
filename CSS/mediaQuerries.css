@@ -1,0 +1,152 @@
+@media screen and (max-width: 1200px) {
+    /* Intro */
+    #desktop-nav {
+        display: none; 
+    }
+    #hamburger-nav {
+        display: flex;
+        gap: 10%;
+    }
+    .texte-presentation {
+        width: 80%;
+    }
+    .titre {
+        margin-bottom: 2em;
+    }
+
+    .emploi {
+        display: grid;
+        margin-left: 5%;
+        margin-top: 10dvh;
+    }
+
+    /* about */
+
+    .profilePicture {
+        width: 50%;
+    }
+    .presentationDetail {
+        width: 50%;
+    }
+
+    /*  Competences */
+
+    .carte-competences {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* Projet */
+
+    .projetImage {
+        flex-direction: column;
+    }
+    .col-left {
+        width: 100%;
+    }
+    .col-right {
+        width: 100%;
+    }
+
+    /* Footer */
+    .containerFooter {
+        display: flex;
+    }
+
+    .containerFooter, p, a {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    /* Core */
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+
+    /* Intro */
+    .texte-presentation {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .texte-presentation p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .emploi {
+        margin-top: 0;
+        font-size: medium;
+    }
+
+    /* about */
+
+    .containerAbout {
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .profilePicture {
+        width: 100%;
+        display: flex;
+        align-items: center ;
+        flex-direction: column;
+    }
+    .resume a {
+        padding: 0%;
+    }
+    .presentationDetail {
+        width: 100%;
+    }
+
+    /* Competences */
+
+    .container-carte, .container-carte-2 {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+    .container-carte {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .carte {
+        margin: 0;
+        align-items: center;
+    }
+
+    /* Projets */
+
+    .projet {
+        flex-direction: column;
+        align-items: center;
+    }
+    .projetDescription {
+        order: 1; /* Le texte est affiché en premier */
+        width: 100%;
+    }
+    .projetImage {
+        order: 2; /* Les images sont affichées après le texte */
+        width: 100%;
+        flex-direction: column;
+    }
+    .col-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .col-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Footer */
+    .containerFooter {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+}

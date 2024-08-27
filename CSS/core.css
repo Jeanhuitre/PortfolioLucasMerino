@@ -1,0 +1,141 @@
+/* Style général du site */
+
+* { /* Vise la page en entier, retire tout espace sur les côtés pour prendre toute la place */
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    font-family:"Lato";
+}
+
+html { /* Scroll  de manière fluide lorsque l'on clique sur les liens*/
+    scroll-behavior: smooth;
+}
+
+main {
+    color: white;
+    background-color: #1A1A1A;
+}
+
+footer {
+    background-color: white;
+    color: #1A1A1A;
+    width: 100%;
+    height: auto;
+}
+
+/* Separateur */
+
+.separateur-ecrit {
+    margin-top: 2em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre-partie, .titre-subpartie {
+    margin-bottom: 2em;
+}
+
+.titre-subpartie {
+    font-style: italic ;
+}
+
+/* Footer */
+
+.containerFooter {
+    display:Flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+}
+
+.containerFooter a {
+    color: black;
+}
+
+.containerFooter p:first-child {
+    width: 10%;
+}
+
+/* Projects */
+
+.projet {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+} 
+
+.projetDescription {
+    width: 40%;
+}
+
+#titreDescription {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.boutonDescription {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.expliDescription p, ul li {
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+
+.projetImage {
+    width: 60%;
+    display: flex;
+    gap: 5px;
+}
+
+.col-left {
+    width: 50%;
+}
+
+.col-right {
+    width: 50%;
+}
+
+.col-left img {
+    max-width: 95%;
+}
+
+.col-right img {
+    max-width: 95%;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+/* buttons */
+
+.boutton {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.boutton:hover {
+    color: gray;
+}

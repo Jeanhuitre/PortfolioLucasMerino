@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="L.Merino">
+    <meta name='copyright' content='L.Merino'>
+    <meta name="keywords" content="Portfolio, Game Design, Exemples, Démonstration, Projets, CV">
+    <meta name='date' content='Apr. 24, 2024'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Css/core.css">
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <link rel="stylesheet" type="text/css" href="Css/mediaQuerries.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lucas Merino Porfolio</title>
+</head>
+<body>
+	<main>
+		<section id="intro">
+			<nav id="desktop-nav"> <!--Nav Desktop-->
+				<div class="logo-nav">
+					<a href="#"><img src="Images/smallLogoPortfolio.png" alt="logo portfolio"></a>
+				</div>
+				<div>
+					<ul class="menu-nav">
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#about">À propos</a></li>
+						<li><a href="#competences">Compétences</a></li>
+						<li><a href="#projets">Projets</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav id="hamburger-nav"> <!--Nav small screen-->
+				<div class="logo-nav">
+					<a href="#"><img src="Images/smallLogoPortfolio.png" alt="logo portfolio"></a>
+				</div>
+				<div class="hamnurger-menu">
+					<div class="hamburger-icon" onclick="toggleMenu()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="hamburgerMenu-nav">
+						<li><a href="#" onclick="toggleMenu()">Accueil</a></li>
+						<li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+						<li><a href="#competences" onclick="toggleMenu()">Compétences</a></li>
+						<li><a href="#projets" onclick="toggleMenu()">Projets</a></li>
+					</div>
+				</div>
+			</nav>
+			<!--Texte d'intro-->
+			<div class="texte-presentation">
+				<div class="titre">
+					<h1>Lucas Merino</h1>
+					<h2>Apprenti auteur de jeu de rôle à la recherche d'une alternance</h2>
+				</div>
+				<div class="introDescription">
+					<p>Je m'appelle Lucas Merino et je suis en quête d'une alternance en UX/UI, 
+						idéalement dans un studio de jeux vidéo ou une agence web. Passionné 
+						par les jeux de rôle et les jeux vidéo, mon objectif est de 
+						perfectionner mes compétences en interfaces et mises en page pour 
+						valoriser les idées, les histoires et les mécaniques. Vous trouverez 
+						ci-dessous une sélection de mes réalisations, ainsi que les projets auxquels 
+						j'ai contribué. </p>
+				</div>
+			</div>
+			<div class="emploi">
+				<h1>Portfolio</h1>
+				<h2>Apprenti <span id="changing-text"></span></h2> <!--Span permet de ne pas perdre le h2 tout en ajoutant un id dans une partie du texte-->
+			</div>
+		</section>
+
+		<!--About me-->
+		<section id="about">
+			<div class="containerAbout">
+				<div class="profilePicture">
+					<img src="/Images/IMG20240517153729.jpg" alt="">
+					<div class="resume">
+						<a href="https://drive.google.com/file/d/1CMRt4GIdojNGTMU1tCpeGZYKECjopVky/view?usp=sharing"><i class="fa fa-file-pdf-o"></i>Pour télécharger mon CV</a>
+					</div>
+				</div>
+				<div class="presentationDetail">
+					<div>
+						<h1>À propos de moi</h1>
+						<p>En pleine reconversion professionnelle, après un parcours riche en expériences variées, 
+							j'ai choisi de me tourner vers mon secteur de prédilection : le jeu vidéo, en empruntant 
+							le chemin du jeu de rôle. Pratiquant cette activité passionnante depuis près de 10 ans, 
+							j'ai pu, en 2024, me consacrer à un domaine qui me tient à cœur tout en débutant le long 
+							apprentissage du développement de jeux indépendants. Travaillant sur de petits projets, 
+							j'y apprends le game design et les différentes manières de créer un jeu grâce au moteur 
+							Unreal Engine. Avec l'aide d'amis déjà actifs dans le milieu, j'ai pu initier deux démos 
+							techniques en cours de développement, que je vous présenterai prochainement.</p>
+
+						<p>En parallèle de ces projets, je développe mes compétences rédactionnelles, 
+							communicationnelles et graphiques pour enrichir mon livre de jeu de rôle, 
+							que je rendrai accessible une fois achevé. Intitulé « Les Chroniques de Felvisor », 
+							cet ouvrage présente un univers complet sous forme d'encyclopédie et de journal 
+							de voyage, accompagné d'outils pour la création de personnages et d'aventures. 
+							Actuellement en version d'essai, je prévois de le publier en collaboration 
+							avec des artistes pour y intégrer des illustrations captivantes et évocatrices.</p>
+
+						<p>Fort de mon parcours, j'ai acquis des compétences et des connaissances variées. 
+							Mon DUT Génie Thermique et Énergie m'a formé dans les domaines de l'énergétique 
+							et de l'environnement. Mon service civique m'a permis de développer des 
+							compétences en événementiel et en communication. De plus, ma première année 
+							de BUT MMI a éveillé mes sens artistiques et créatifs. Je complète cette 
+							formation par diverses ressources vidéo et littéraires, telles que Alt236, 
+							GMTK, ou les œuvres de Celia Hodent, Marc Albinet et Jesse Schell.</p>
+
+						<p>Sérieux, autonome, assidu et surtout passionné par cette voie professionnelle, 
+							je souhaite m'orienter vers le secteur du jeu, particulièrement celui du jeu 
+							vidéo. Pour y parvenir, je mise sur l'auto-apprentissage, l'écriture et la 
+							participation à des projets de développement de jeu, qu'ils soient ponctuels 
+							ou dans le cadre de game jams.</p>
+
+						<p>Dans ce portfolio, vous découvrirez l'ensemble de mes projets réalisés, 
+							illustrés par des captures d'écran et des vidéos, ainsi que les fruits 
+							de mes formations et de mes écrits. Cette vitrine de compétences et de 
+							savoir-faire est en constante évolution, s'enrichissant régulièrement 
+							de nouveaux projets à vous présenter.</p>
+
+						<p>Je vous souhaite une excellente lecture et espère vous retrouver bientôt. 
+							J'ai hâte que mon profil suscite votre intérêt !</p>
+
+						<p>Lucas Merino</p>
+					</div>
+					<h1>Projets en cours</h1>
+					<ul>
+						<li>Les Chroniques de Felvisor - Vers une version finale.</li>
+						<li>Vagabond 2997 - Mise en page, création de mécaniques et de contenu.</li>
+						<li>Suite game jam GMTK 2024 - Must wake up.</li>
+						<li>Développement complet d'une démo technique - Project Powers, un jeu de type cyberpunk d'infiltration.</li>
+					</ul>
+					<div class="reseaux" id="reseaux">
+						<a href="https://www.linkedin.com/in/lucas-merino/" class="fa fa-linkedin"></a>
+						<a href="mailto:lucas.merino@outlook.fr" class="fa fa-envelope"></a>
+						<p>Vous pouvez me contacter grâce à LinkedIn ou par mail.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Partie compétences avec cartes-->
+		<section id="competences">
+			<div class="separateur-ecrit">
+				<div class="titre-partie">
+					<h1>Compétences et savoir être</h1>
+				</div>
+				<div class="titre-subpartie">
+					<h2>...Révélez les cartes, la chance est de votre côté...</h2>
+				</div>
+			</div>
+			<div class="carte-competences" id="carte-competences">
+				<div class="container-carte">
+					<div class="carte" id="AsBaton">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/cardBaton.png" alt="Recto de la carte valet des bâtons">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardThemeAsBaton.png" alt="Verso de la carte valet des bâtons">
+							</div>
+						</div>
+						<p>Valet des bâtons</p>
+					</div>
+					<div class="carte" id="Chariot">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/cardChariot.png" alt="Recto de la carte le chariot">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardThemeChariot.png" alt="Verso de la carte le chariot">
+							</div>
+						</div>
+						<p>Le chariot</p>
+					</div>
+					<div class="carte" id="8Coins">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/cardHeightCoins.png" alt="Recto de la carte le huit de denier">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardTheme8coins.png" alt="Verso de la carte le huit de denier">
+							</div>
+						</div>
+						<p>Le huit de denier</p>
+					</div>
+					<div class="carte" id="7Coins">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/cardSevenCoins.png" alt="Recto de la carte le sept de denier">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardTheme7Coins.png" alt="Verso de la carte le sept de denier">
+							</div>
+						</div>
+						<p>Le sept de denier</p>
+					</div>
+					<div class="carte" id="6Swords">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/cardSixSword.png" alt="Recto de la carte le six d'épée">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardTheme6épée.png" alt="Verso de la carte le six d'épée">
+							</div>
+						</div>
+						<p>Le six d'épée</p>
+					</div>
+					<div class="carte" id="9Cups">
+						<div class="inner-carte">
+							<div class="front">
+								<img src="/Images/9cups.png" alt="Recto de la carte le neuf de coupe">
+							</div>
+							<div class="back">
+								<img src="/Images/versoCardTheme9cups.png" alt="Verso de la carte le neuf de coupe">
+							</div>
+						</div>
+						<p>Le neuf de coupe</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Partie travaux-->
+		<section id="projets">
+			<div class="separateur-ecrit">
+				<div class="titre-partie">
+					<h1>Projets et travaux</h1>
+				</div>
+				<div class="titre-subpartie">
+					<h2>...Des histoires à vivre, des mondes à explorer...</h2>
+				</div>
+			</div>
+			<!--Slider-->
+			<div class="slider" id="projets">
+				<div class="container-projets">
+					<div class="projet">
+						<div class="projetDescription">
+							<h3 id="titreDescription">Jeu de rôle - Les Chroniques de Felvisor</h3>
+							<div class="boutonDescription">
+								<button class="boutton" id="descriptionBtnFel">Description du projet</button>
+								<button class="boutton" id="competencesBtnFel">Compétences impliquées</button>
+							</div>
+							<div class="expliDescription" id="expliDescriptionFel">
+								<p>Les Chroniques de Felvisor sont la création d’une version d’essai d’un jeu 
+									de rôle fantasy, réalisée entre septembre 2023 et juillet 2024. Fruit de 
+									nombreuses semaines de travail en autonomie, ce jeu de rôle a mobilisé 
+									des compétences variées, allant de la création d'univers à la mise en page, 
+									en passant par l'utilisation de l'intelligence artificielle comme outil 
+									d'assistance.</p>
+
+									<p>Cette œuvre de fantasy pré-apocalyptique, évoquant une course contre la montre 
+										infernale, met en scène de puissantes entités ayant usurpé la place des créateurs 
+										du monde dans lequel vous jouez. Véritables envahisseurs, ils dirigent désormais 
+										Felvisor, menant cette terre à sa ruine.</p>
+
+									<p>Inspiré par de nombreuses œuvres de fantasy, le concept de multivers et de 
+										boucle narrative (comme dans la trilogie des Dark Souls de FromSoftware), 
+										Les Chroniques de Felvisor offrent une histoire renouvelable où des divinités, 
+										incarnant des concepts non naturels, prennent le contrôle du monde pour 
+										accomplir leurs desseins. Le monde devient ainsi un terrain de jeu pour ces 
+										puissances ayant supplanté les créateurs de cette terre.</p>
+
+									<p>Beaucoup de travail et d'ajustements restent nécessaires pour 
+										produire une œuvre complète. Je prévois de vous tenir régulièrement informés 
+										de l'avancement de ce projet jusqu'à sa finalisation. N'hésitez pas à le consulter 
+										et à me faire part de vos impressions et suggestions pour l'améliorer !</p>
+									
+										<div class="lien">
+										<a href="https://drive.google.com/file/d/1AV1DAtfzWoV6WDHrd9UskFdMikTqFupz/view?usp=sharing">
+											<p>Lien vers le projet</p>
+										</a>
+									</div>
+							</div>
+						</div>
+						<div class="projetImage">
+							<div class="col-left">
+								<div class="row row1">
+									<img src="/Images/VerySmallDechiree.png" loading="lazy" alt="Felvisor page déchirée présentation livre">
+								</div>
+								<div class="row row2">
+									<img src="/Images/PlancheCadranVerySmall.png" loading="lazy" alt="Felvisor Cadran des dieux">
+								</div>
+							</div>
+	
+							<div class="col-right">
+								<div class="row row1">
+									<img src="/Images/pageCampagneVerySmall.png" loading="lazy" alt="Felvisor partie du système de jeu">
+								</div>
+								<div class="row row3">
+									<div class="row-col left">
+										<img src="/Images/blackHoleHead.png" loading="lazy" alt="Felvisor illustration flamme">
+									</div>
+									<div class="row-col right">
+										<img src="/Images/priestress.png" loading="lazy" alt="Felvisor illustration prêtresse">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<div class="projet">
+						<div class="projetDescription">
+							<h3 id="titreDescription">Jeu de rôle - Les Chroniques de Felvisor</h3>
+							<div class="boutonDescription">
+								<button class="boutton" id="descriptionBtnVag">Description du projet</button>
+								<button class="boutton" id="competencesBtnVag">Compétences impliquées</button>
+							</div>
+							<div class="expliDescription" id="expliDescriptionVag">
+								<p>Vagabond 2997 est le second jeu de rôle sur lequel j’ai choisi de travailler en 2024. Plongé dans un univers que je maîtrise peu, 
+									il met en scène l’équipage d’un vaisseau spatial nommé Le Vagabond, dont l'unique but est de voyager au-delà des frontières de la Fédération 
+									terrienne afin de découvrir l’immensité du cosmos. Déceler des secrets et en apprendre plus sur l’univers : telles sont les missions que les joueurs 
+									reçoivent au début de leur aventure.</p>
+
+								<p>Inspiré par plusieurs œuvres de science-fiction comme Star Wars, Capitaine Albator, Galaxy Express 999 ou encore Honkai Star Rail, ce jeu de 
+									rôle permet d’explorer une multitude de mondes tout en favorisant les interactions entre les joueurs. Ils peuvent faire partie de différentes factions, 
+									mais se retrouvent tous seuls dans un vaisseau en piteux état, avec des objectifs ou des origines qu’il vaudrait mieux garder secrètes.</p>
+								
+								<p>Dans un état bien moins avancé que Les Chroniques de Felvisor, Vagabond 2997 n’en est encore qu’à l’étape de test au sein d’une sphère privée. 
+									Sans mise en page pour le moment, le jeu ne possède que des documents récapitulant les règles à suivre, ainsi que les méthodes de création de personnage 
+									ou d’interaction avec cet univers inédit. Véritable coup d’essai sur le thème de l’exploration spatiale, j’attends davantage de retours pour continuer 
+									son développement.</p>
+									<div class="lien">
+										<a href="https://drive.google.com/drive/folders/1kx03sRLDqDqr7yJlJYHFPv12mVgQ-NN2">
+											<p>Lien vers le projet</p>
+										</a>
+									</div>
+							</div>
+						</div>
+						<div class="projetImage">
+							<div class="col-left">
+								<div class="row row1">
+									<img src="/Images/mars.png" loading="lazy" alt="Vagabond mars habitant">
+								</div>
+							</div>
+	
+							<div class="col-right">
+								<div class="row row1">
+									<img src="/Images/spaceStation.png" loading="lazy" alt="Vagabon spation spatiale">
+								</div>
+								<div class="row row1">
+									<img src="/Images/smallSpaceShip.png" loading="lazy" alt="Vagabond vaisseau spatial">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<div class="containerFooter">
+			<p>Copyright © 2024 Portfolio</p>
+			<p>La plupart des images, excepté les mises en page, ont été réalisées grâce à l'IA Midjourney</p>
+			<a href="https://www.linkedin.com/in/lucas-merino/" class="fa fa-linkedin"></a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
