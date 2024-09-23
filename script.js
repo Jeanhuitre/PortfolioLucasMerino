@@ -67,18 +67,17 @@ const descriptionTextFel = `
     </div>`;
 
 const descriptionTextVaga = `
-    <p>Vagabond 2997 est le second jeu de rôle sur lequel j’ai choisi de travailler durant cette année 2024. Plongé dans un univers que je maîtrise peu, 
-    il met en scène l’équipage d’un vaisseau spatial nommée Le Vagabond, dont le seul et unique but et de voyager au-delà des frontières de la Fédération 
-    terrienne afin de découvrir l’immensité du cosmos. Déceler des secrets, en apprendre plus sur l’univers, voilà la mission que les joueurs se voient 
-    attribuer au début de leur aventure.</p>
-    <p>Inspiré par plusieurs œuvres de science-fiction comme Star Wars, Capitaine Albator, Galaxy express 999 ou encore Honkai Star Rail, ce jeu de 
-    rôle permet d’explorer une quantité de mondes impressionnante tout en favorisant les interactions entre chacun des joueurs. Ayant la possibilité 
-    de faire partie de différentes factions, nos parfaits inconnus se retrouvent seuls dans un vaisseau en piteux état avec en tête des objectifs 
-    ou des origines qu’il vaudrait mieux garder secrètes.</p>
-    <p>Dans un état bien moins avancé que les Chroniques de Felvisor, le Vagabond 2997 n’en est encore qu’à l’état de test au sein d’une sphère privée. 
-    Sans mise en page d’aucune sorte, il ne possède que des documents récapitulant les règles à ne pas oublier, ainsi que les manières de créer un 
-    personnage ou d’interagir avec cet univers inédit. Véritable coup d’essai en ce qui concerne le thème de l’exploration spatiale, j’attends d’en 
-    avoir plus de retours pour continuer son édition et sa préparation.</p>
+    <p>Vagabond 2997 est le second jeu de rôle sur lequel j’ai choisi de travailler en 2024. Plongé dans un univers peu familier, il met en scène l’équipage 
+    du vaisseau spatial Le Vagabond, dont l’unique but est de voyager au-delà des frontières de la Fédération terrienne pour découvrir l’immensité du cosmos. 
+    Les joueurs ont pour mission d'explorer l’univers et de dévoiler ses secrets.</p>
+
+    <p>Inspiré par des œuvres de science-fiction telles que Star Wars, Capitaine Albator, Galaxy Express 999 et Honkai Star Rail, ce jeu de rôle propose 
+    d’explorer une multitude de mondes tout en favorisant les interactions entre joueurs. Membres de différentes factions, les personnages se retrouvent 
+    seuls dans un vaisseau délabré, avec des objectifs ou des origines qu’ils préfèrent garder secrètes.</p>
+
+    <p>Moins abouti que Les Chroniques de Felvisor, Vagabond 2997 en est encore à l’état de test privé. Sans mise en page, il ne 
+    dispose que de documents récapitulant les règles, la création de personnage et les interactions dans cet univers inédit. Ce projet 
+    d’exploration spatiale est encore en phase de développement, en attente de retours avant de poursuivre son édition et sa préparation.</p>
         <div class="lien">
             <a href="https://drive.google.com/drive/folders/1kx03sRLDqDqr7yJlJYHFPv12mVgQ-NN2">
                 <p>Lien vers le projet</p>
@@ -88,60 +87,39 @@ const descriptionTextVaga = `
 /* Mise dans une constance du second texte à remplacer */
 const competencesTextFel = `
 <ul>
-    <li>Game design : Création de mécaniques de combat et d’interactions entre le système et les joueurs, 
-    montée en niveau et progression, équilibrage des règles, système de jeu complet et entièrement 
-    expliqué. Création de personnages, de races et de classes jouables afin de débuter une campagne 
-    jusqu’au niveau 4.</li>
+    <li>Game design : Création de mécaniques de combat, progression, équilibrage des règles et système de jeu complet. 
+    Développement de personnages, races et classes jouables jusqu'au niveau 4.</li>
 
-    <li>Game writing : Création d’un univers de fantasy inédit et complet, d’une mythologie et de 
-    personnages importants. Descriptions des peuples et des lieux, des pays et des régions afin 
-    d’aider les joueurs et le maître du jeu à s’intégrer dans Felvisor.</li>
+    <li>Game writing : Création d’un univers fantasy inédit avec mythologie, personnages, peuples et régions. 
+    Descriptions pour aider à l’immersion dans Felvisor.</li>
 
-    <li>Narrative design : Incorporation d’un journal de voyage, description du monde et des lieux par 
-    les yeux d’un personnage. Mécaniques narratives pouvant diriger une campagne. Éléments narratifs 
-    présents dans la mise en page. Éléments tirés au hasard par les joueurs afin d’altérer leur 
-    personnage et les événements qui pourraient graviter autour d’eux.</li>
+    <li>Narrative design : Incorporation d’un journal de voyage et mécaniques narratives pour diriger la campagne. 
+    Éléments narratifs altérant les personnages et événements.</li>
 
-    <li>Illustrations : Utilisation de Photoshop afin d’intégrer les images au document. Ajustement des 
-    couleurs et de la taille des images. Création d’une couverture et de fonds de page dans un style 
-    parchemin parfois abîmé. Création d’un logo pour une potentielle édition du jeu de rôle.</li>
+    <li>Illustrations : Utilisation de Photoshop pour intégrer, ajuster les images, et créer une couverture 
+    et des fonds de page en style parchemin. Création d'un logo.</li>
 
-    <li>Police d’écriture : Création d’une police au format runique avec Illustrator et Birdfont, afin de 
-    retranscrire des informations de narration cachées.</li>
+    <li>Police d’écriture : Création d’une police runique avec Illustrator et Birdfont pour des informations narratives cachées.</li>
 
-    <li>Mise en page : Utilisation d’InDesign, afin de mettre en page l’entièreté du document. Utilisation 
-    des marges et fonds perdus pour impression. Automatisation de la mise en page par les styles de 
-    paragraphe et les styles de page. Automatisation du sommaire et création de liens croisés et 
-    hyperliens pour la navigation.</li>
+    <li>Mise en page : Utilisation d’InDesign pour une mise en page automatisée avec styles et hyperliens. Gestion des marges et fonds perdus pour impression.</li>
 
-    <li>Utilisation de l’IA : Utilisation de ChatGPT et Midjourney, l’un pour générer des images afin de 
-    mettre en avant mes propos dans l’attente d’une collaboration avec un artiste, l’autre pour me 
-    suggérer des noms de lieux ou de personnages, tout en corrigeant les erreurs d’orthographe ou de 
-    syntaxe que je n’aurais pas remarquées.</li>
+    <li>Utilisation de l’IA : Usage de ChatGPT pour corriger des textes et Midjourney pour créer des images en attendant une collaboration artistique.</li>
 
-    <li>Savoir-faire : Autonomie et documentation, afin d’utiliser au mieux les logiciels employés. Prise 
-    de recul et acceptation des critiques, dans le but d’améliorer les systèmes mis en place. Sessions 
-    et batteries de tests organisées sous la forme de parties test. Refonte graphique et changements 
-    afin de faciliter et de rendre plus agréable la lecture.</li>
+    <li>Savoir-faire : Autonomie, documentation, et prise en compte des critiques. Tests réguliers pour améliorer systèmes et lisibilité.</li>
 </ul>`;
 
 const competencesTextVaga = `
 <ul> 
-    <li>Game design : Création de mécaniques de combat et d’interactions entre le système et les joueurs, montée en niveau et progression, équilibrage des règles, 
-    système de jeu complet et entièrement expliqué. Création de personnage au sein d’un équipage de voyageurs.</li>
+    <li>Game design : Création de mécaniques de combat, progression, et équilibrage des règles. Développement de personnages dans un équipage de voyageurs. Association du jeu de rôle
+    et du jeu de plateau.</li>
 
-    <li>Game writing : Création d’un univers de science fiction inédit et complet, d’entreprises et de factions opposées. Description des types d’êtres humains 
-    et de lieux, de planètes et de régions afin d’aider les joueurs et le maître du jeu à s’intégrer dans l’univers du Vagabond. Création d’une frise chronologique composée 
-    d’événements importants.</li>
+    <li>Game writing : Création d’un univers de science-fiction avec entreprises, factions, planètes et chronologie d’événements majeurs pour l’univers du Vagabond.</li>
 
-    <li>Illustration : Préparation de plusieurs cartes, qui permettent à l’équipage de se repérer dans leur trajet ou pour permettre de diriger les combats.</li>
+    <li>Illustration : Réalisation de cartes pour orienter les déplacements de l’équipage et diriger les combats. Création d'affiches de propagande pour les factions.</li>
 
-    <li>Utilisation de l’IA : Utilisation de ChatGpt et Midjourney, l’un pour générer des images afin de mettre en avant mes propos dans l’attente d’une collaboration 
-    avec un artiste, l’autre pour me suggérer des noms de lieux ou de personnages, tout en corrigeant les erreurs d’orthographes ou de syntaxe qui je n’aurais pas remarqué.</li>
+    <li>Utilisation de l’IA : Usage de ChatGPT pour corriger le contenu et de Midjourney pour générer des visuels en attendant une collaboration artistique.</li>
 
-    <li>Savoir-faire : Autonomie et documentation, afin d’utiliser au mieux les logiciels employés. Prise de recul et acceptation des critiques, dans le but 
-    d’améliorer les systèmes mis en place. Sessions et batteries de test organisées sous la formes de parties test. Refonte graphique et changements afin de faciliter 
-    et de rendre plus agréable la lecture.</li>
+    <li>Savoir-faire : Autonomie, documentation, tests réguliers et ajustements pour améliorer les systèmes et la lisibilité.</li>
 </ul>`;
 
     descriptionBtnFel.addEventListener('click', () => { /* si clic sur bouton de description */
