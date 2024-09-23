@@ -120,6 +120,10 @@ footer {
     flex: 1;
 }
 
+.imageFull img{
+    width: 100%;
+}
+
 /* buttons */
 
 .boutton {

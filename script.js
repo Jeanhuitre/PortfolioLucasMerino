@@ -30,11 +30,17 @@ document.addEventListener("DOMContentLoaded", function() { // quand le DOM est c
 
 const descriptionBtnFel = document.getElementById('descriptionBtnFel'); /* récupération des boutons */
 const competenceBtnFel = document.getElementById('competencesBtnFel');
+
 const descriptionBtnVaga = document.getElementById('descriptionBtnVag');
 const competenceBtnVaga = document.getElementById('competencesBtnVag');
 
+const descriptionBtnSankaku = document.getElementById('descriptionBtnSankaku');
+const competenceBtnSankaku = document.getElementById('competencesBtnSankaku');
+
 const expliTexteFel = document.getElementById('expliDescriptionFel'); /* récupération de la zone de description */
 const expliTexteVaga = document.getElementById('expliDescriptionVag');
+const expliTexteSankaku = document.getElementById('expliDescriptionSankaku');
+
 
 /* Mise dans une constance du premier texte à remplacer */
 const descriptionTextFel = `
@@ -84,6 +90,23 @@ const descriptionTextVaga = `
             </a>
         </div>`;
 
+const descriptionTextSankaku = `
+    <p>Sankaku est une ville cyberpunk issue d’un projet de démo technique, actuellement en pause. Imprégnée de l’atmosphère sombre de Night City, 
+        cette métropole hyperindustrialisée, pluvieuse et polluée se situe dans un Japon fictif et futuriste, dominée par trois grandes entreprises.</p>
+
+    <p>Nommée Sankaku car elle fut fondée par trois figures importantes, il est possible de les retrouver et de les découvrir au sein d’un document 
+        Notion complet expliquant en détail le concept narratif et artistique derrière cet univers fragmenté. Inspirée d’œuvres importantes du 
+        cyberpunk telles que le jeu vidéo Cyberpunk 2077, Ghost In The Shell, Deus Ex, ou encore Batman Arkham et la franchise Yakuza, elle trouve 
+        son originalité dans les figures qui la composent et les intrigues tournant autour du héros.</p>
+    
+    <p>D’autres références à la culture japonaise, qu’elles soient mythologiques ou modernes, sont également présentes afin d’enrichir un univers 
+        centré uniquement sur cette ville. À vous d’y trouver votre place, d’y briller l’espace d’un instant ou de la quitter.</p>
+        <div class="lien">
+        <a href="https://shrub-technician-44f.notion.site/Project-Powers-Sankaku-la-ville-aux-trois-puissants-1050ba2f1fef8039ae31c6890bd93b13">
+            <p>Lien vers le projet</p>
+        </a>
+    </div>`;
+
 /* Mise dans une constance du second texte à remplacer */
 const competencesTextFel = `
 <ul>
@@ -122,6 +145,21 @@ const competencesTextVaga = `
     <li>Savoir-faire : Autonomie, documentation, tests réguliers et ajustements pour améliorer les systèmes et la lisibilité.</li>
 </ul>`;
 
+const competencesTextSankaku = `
+<ul> 
+    <li>World Building : Création d’un univers et de ses piliers restreints à une ville et ses environs, avec de nombreuses références au genre cyberpunk et à l’infiltration.</li>
+
+    <li>Narrative Design : Développement d’une histoire autour de Sankaku, la ville aux trois piliers. Création des antagonistes et des entreprises qu’ils représentent, 
+    ainsi que leur impact sur le monde.</li>
+
+    <li>Character Design : Création de personnages (hors dessin), de leur caractère et de leurs intentions concernant l’univers. Conception d’ennemis et de boss de faction, 
+    liés à chaque entreprise, qui se mettront en travers de la route du héros.</li>
+
+    <li>Utilisation de l’IA : Usage de ChatGPT pour corriger le contenu et de Midjourney pour générer des visuels en attendant une collaboration artistique.</li>
+
+    <li>Concept Artistique : Intentions artistiques et pistes à explorer pour donner un aperçu de l’univers et de l’ambiance souhaitée à la personne chargée de donner vie aux idées.</li>
+</ul>`;
+
     descriptionBtnFel.addEventListener('click', () => { /* si clic sur bouton de description */
         expliTexteFel.innerHTML = descriptionTextFel; /* affiche la description */
     });
@@ -138,6 +176,13 @@ const competencesTextVaga = `
         expliTexteVaga.innerHTML = competencesTextVaga; /* affiche compétences */
     });
 
+    descriptionBtnSankaku.addEventListener('click', () => { /* si clic sur bouton de description */
+        expliTexteSankaku.innerHTML = descriptionTextSankaku; /* affiche la description */
+    });
+
+    competenceBtnSankaku.addEventListener('click', () => { /* si clic sur bouton compétences */
+        expliTexteSankaku.innerHTML = competencesTextSankaku; /* affiche compétences */
+    });
 
     document.addEventListener('DOMContentLoaded', function() {
         const cartes = document.querySelectorAll('.carte');
