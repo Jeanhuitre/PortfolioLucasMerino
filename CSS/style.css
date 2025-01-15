@@ -203,6 +203,11 @@ a:hover {
     text-align: center;
 }
 
+.resume a {
+    padding: 0%;
+    padding-right: 5%;
+}
+
 /* Compétences */
 
 .carte-competences {

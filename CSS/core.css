@@ -24,7 +24,7 @@ footer {
     background-color: white;
     color: #1A1A1A;
     width: 100%;
-    height: auto;
+    height: 100px;
 }
 
 /* Separateur */
@@ -85,6 +85,7 @@ footer {
 .boutonDescription {
     display: flex;
     margin-bottom: 1rem;
+    justify-content: space-evenly;
 }
 
 .expliDescription p, ul li {
@@ -107,17 +108,20 @@ footer {
 }
 
 .col-left img {
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .col-right img {
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .row3 {
     display: flex;
-    justify-content: space-evenly;
     flex: 1;
+}
+
+.row-col {
+    
 }
 
 .imageFull img{
