@@ -31,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function() { // quand le DOM est c
 const descriptionBtnFel = document.getElementById('descriptionBtnFel'); /* récupération des boutons */
 const competenceBtnFel = document.getElementById('competencesBtnFel');
 
+const descriptionBtnCV = document.getElementById('descriptionBtnCV');
+const competenceBtnCV = document.getElementById('competencesBtnCV');
+
 const descriptionBtnVaga = document.getElementById('descriptionBtnVag');
 const competenceBtnVaga = document.getElementById('competencesBtnVag');
 
@@ -38,6 +41,7 @@ const descriptionBtnSankaku = document.getElementById('descriptionBtnSankaku');
 const competenceBtnSankaku = document.getElementById('competencesBtnSankaku');
 
 const expliTexteFel = document.getElementById('expliDescriptionFel'); /* récupération de la zone de description */
+const expliTexteCV = document.getElementById('expliDescriptionCV');
 const expliTexteVaga = document.getElementById('expliDescriptionVag');
 const expliTexteSankaku = document.getElementById('expliDescriptionSankaku');
 
@@ -69,6 +73,33 @@ const descriptionTextFel = `
     <div class="lien">
         <a href="https://drive.google.com/file/d/1AV1DAtfzWoV6WDHrd9UskFdMikTqFupz/view?usp=sharing">
             <p>Lien vers le projet</p>
+        </a>
+    </div>`;
+
+    const descriptionTextCV = `
+    <p>Imaginé après avoir terminé l’écriture et la mise en page de la version d’essai des Chroniques de Felvisor, jeu de rôle sur 
+        lequel j’ai travaillé, ce CV représente à lui seul toute ma passion pour le JDR et les univers de fantaisie. Produit avec l’envie 
+        d’imiter les fiches de personnages de mes jeux favoris, j’ai voulu lui donner des airs de document tout droit sortis de l’époque 
+        médiévale, avec des lettrines et quelques enluminures colorées.</p>
+
+    <p>Travail m’ayant demandé d’effectuer plus d’une recherche, j’ai d’abord passé du temps à imaginer la forme des lettres 
+        qui allaient trôner en haut de mon document, annonciatrices de son utilité une fois celui-ci ouvert. Bleu d’encre (#242833) 
+        et vieux bourgogne (#3b2b2e) se côtoient sur un parchemin décoré de vert celtique (#2a3b34) me rappelant les musiques envoutantes 
+        des Contes de Terremer.</p>
+
+    <p>Regroupant les codes du jeu de rôle, tel l’utilisation du niveau d’un personnage ou sa classe, j’ai voulu retrouver dans la 
+        mise en page les dispositions semblables à Donjon et Dragons. Les compétences de sauvegarde rappellent donc sans détours 
+        les jets de sauvegarde, ici utilisés pour décrire les compétences plus humaines et qui servent, dans ces jeux, à survivre 
+        aux dangers et difficultés. Les compétences techniques ne sont pas en reste et attendent, tel une liste écrite par le joueur, 
+        que sa création de personnage se poursuive. Toutes font appel à un niveau de compétence représentés par 
+        les rangs : novice, compétent ou spécialisé.</p>
+
+    <p>À travers ce projet, j’ai pu non seulement exprimer ma créativité et ma passion, mais aussi affirmer mon identité professionnelle en tant que 
+        créateur d’expériences uniques, adaptées tant au jeu qu’au monde professionnel.</p>
+    
+    <div class="lien">
+        <a href="https://drive.google.com/file/d/1OM_yItuEB96lAYgCzEkINfcWDPWHw4La/view?usp=sharing">
+            <p>Lien vers le CV</p>
         </a>
     </div>`;
 
@@ -131,6 +162,19 @@ const competencesTextFel = `
     <li>Savoir-faire : Autonomie, documentation, et prise en compte des critiques. Tests réguliers pour améliorer systèmes et lisibilité.</li>
 </ul>`;
 
+const competencesTextCV = `
+<ul>
+    <li>Illustration : Utilisation de Photoshop et Illustrator, afin de créer à la plume des lettrines et leurs ornements, le tout 
+    en respectant les teintes associées aux Chroniques de Felvisor afin, dans un futur plus lointain, de ce servir de ce template pour 
+    agrémenter les fiches de personnage du jeu de rôle.</li>
+
+    <li>Mise en page : En association avec Photoshop et Illustrator, j’ai utilisé Indesign afin de mettre 
+    en forme le document, avec un fond préparé et retravaillé en amont, le but étant de faire correspondre de manière précise les écrits avec la mise en page.</li>
+
+    <li>Savoir faire : Autonomie et rigueur, documentation et pistes à explorer par le biais de dessins papiers. Technique, reproduction d’un croquis, usage de la plume et des brush, 
+    finalisation du dessin et choix des couleurs en accord avec les teintes du sujet initial. </li>
+</ul>`;
+
 const competencesTextVaga = `
 <ul> 
     <li>Game design : Création de mécaniques de combat, progression, et équilibrage des règles. Développement de personnages dans un équipage de voyageurs. Association du jeu de rôle
@@ -166,6 +210,14 @@ const competencesTextSankaku = `
 
     competenceBtnFel.addEventListener('click', () => { /* si clic sur bouton compétences */
         expliTexteFel.innerHTML = competencesTextFel; /* affiche compétences */
+    });
+
+    descriptionBtnCV.addEventListener('click', () => { /* si clic sur bouton de description */
+        expliTexteCV.innerHTML = descriptionTextCV; /* affiche la description */
+    });
+
+    competenceBtnCV.addEventListener('click', () => { /* si clic sur bouton compétences */
+        expliTexteCV.innerHTML = competencesTextCV; /* affiche compétences */
     });
 
     descriptionBtnVaga.addEventListener('click', () => { /* si clic sur bouton de description */
